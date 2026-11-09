@@ -1,0 +1,13 @@
+# Python 3.12 / Windows x64; install matching NVIDIA driver separately.
+# Foundation-model libraries are included in assets/deps.
+# Install torch from its official cu128 wheel index before the remaining packages.
+torch==2.8.0+cu128
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+joblib==1.6.0
+requests==2.34.2
+transformers==4.51.3
+tokenizers==0.21.1
+safetensors==0.5.3
+huggingface-hub==0.30.2

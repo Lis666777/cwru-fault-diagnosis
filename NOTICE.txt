@@ -1,0 +1,3 @@
+This source distribution contains the project-owned CWRU diagnosis Python and PowerShell scripts, licensed under the Apache License, Version 2.0.
+The Qwen foundation model, CWRU datasets and third-party dependencies are separate works and are not relicensed by this notice.
+This distribution contains no private vehicle logs, project documents, user credentials or foundation-model weights.
