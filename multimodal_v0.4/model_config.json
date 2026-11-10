@@ -1,0 +1,86 @@
+{
+  "dimensions": {
+    "bearing": 256,
+    "current": 1596,
+    "gear": 1555
+  },
+  "prompts": {
+    "bearing": "根据输入的轴承振动频谱诊断状态。仅输出JSON，字段为fault、diameter_mil。fault取normal、inner、ball、outer；健康时diameter_mil为0，故障时为7、14或21。",
+    "current": "根据三相电流频谱诊断电机状态。仅输出JSON，字段fault取normal、bearing、rotor_bar、interturn_short。",
+    "gear": "根据齿轮箱振动频谱诊断状态。仅输出JSON，字段fault取normal、gear、compound；compound表示齿轮与轴承同时故障。"
+  },
+  "targets": {
+    "bearing": [
+      {
+        "fault": "normal",
+        "diameter_mil": 0
+      },
+      {
+        "fault": "inner",
+        "diameter_mil": 7
+      },
+      {
+        "fault": "ball",
+        "diameter_mil": 7
+      },
+      {
+        "fault": "outer",
+        "diameter_mil": 7
+      },
+      {
+        "fault": "inner",
+        "diameter_mil": 14
+      },
+      {
+        "fault": "ball",
+        "diameter_mil": 14
+      },
+      {
+        "fault": "outer",
+        "diameter_mil": 14
+      },
+      {
+        "fault": "inner",
+        "diameter_mil": 21
+      },
+      {
+        "fault": "ball",
+        "diameter_mil": 21
+      },
+      {
+        "fault": "outer",
+        "diameter_mil": 21
+      }
+    ],
+    "current": [
+      {
+        "fault": "normal"
+      },
+      {
+        "fault": "bearing"
+      },
+      {
+        "fault": "rotor_bar"
+      },
+      {
+        "fault": "interturn_short"
+      }
+    ],
+    "gear": [
+      {
+        "fault": "normal"
+      },
+      {
+        "fault": "gear"
+      },
+      {
+        "fault": "compound"
+      }
+    ]
+  },
+  "foundation_path": "../垂直大模型实验_v1/base_model",
+  "dependency_path": "../垂直大模型实验_v1/deps",
+  "foundation": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "visual_weight": 0.1
+}

@@ -1,0 +1,22 @@
+{
+  "bearing_normalization.npz": {
+    "bytes": 4590,
+    "sha256": "591c3daa06cabbde8e9c15fcd5ec45e3689415f9bf774b6f8d9cdc0b2fbd16f9"
+  },
+  "current_normalization.npz": {
+    "bytes": 26030,
+    "sha256": "c09b6dca229d5962797b1e0bb5668f6ba070b406466bceca68eb99994ffd8bfb"
+  },
+  "gear_normalization.npz": {
+    "bytes": 25374,
+    "sha256": "f93aa969ca6b5e1a98715a13544e67331535eef9d1a88971c7fffac168745744"
+  },
+  "multimodal.pt": {
+    "bytes": 32785891,
+    "sha256": "fd1b369a732d7df575c522cf1d3067911352f9e1aca6da4214751b9d255359a3"
+  },
+  "numerical.pt": {
+    "bytes": 27794279,
+    "sha256": "7ab7b48542f11ffffaae3ee8a51896b65d0ac362adf71cdf4ab405c163ab4e1d"
+  }
+}
